@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب تصوير أسيل - توثيق أجمل اللحظات</title>
+    
+    <!-- استيراد خطوط جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- استيراد ملف التنسيق -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#booking">احجز الآن</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>ستديو الأسيل للتصوير</h1>
+        <p>نوثق ذكرياتك لتظل حية للأبد</p>
+    </section>
+
+    <section class="services" id="services">
+        <div class="service-card">
+            <h3>تصوير خريجين 🎓</h3>
+            <p>احتفل بنجاحك بصور تليق بإنجازك الكبير</p>
+        </div>
+        <div class="service-card">
+            <h3>تصوير أطفال 👶</h3>
+            <p>براءة أطفالكم في أجمل اللقطات الفنية</p>
+        </div>
+        <div class="service-card">
+            <h3>تصوير كابلز 💍</h3>
+            <p>نوثق قصة حبكم في يومكم المميز</p>
+        </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+        <h2>احجز جلستك التصويرية</h2>
+        <p>املأ البيانات وسنتواصل معك لتأكيد الموعد</p>
+        
+        <div class="booking-form">
+            <form id="reservationForm">
+                <input type="text" id="name" placeholder="الاسم الكامل" required>
+                <input type="tel" id="phone" placeholder="رقم التواصل" required>
+                <select id="service-type" required>
+                    <option value="">اختر نوع التصوير</option>
+                    <option value="grad">تصوير خريجين</option>
+                    <option value="kids">تصوير أطفال</option>
+                    <option value="couples">تصوير كابلز</option>
+                    <option value="other">أخرى</option>
+                </select>
+                <input type="date" id="date" required>
+                <textarea id="notes" rows="3" placeholder="أي ملاحظات إضافية؟"></textarea>
+                <button type="submit" class="btn-submit">تأكيد طلب الحجز</button>
+            </form>
+            <div id="confirmation-msg">تم استلام طلب حجزك بنجاح يا <span id="client-name"></span>! سنتواصل معك قريباً. ✨</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - ستديو الأسيل للتصوير</p>
+    </footer>
+
+    <!-- استيراد ملف البرمجة -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
